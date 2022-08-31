@@ -1,4 +1,4 @@
-# URL Shortening CLI
+# Bitly Command Line URL Shortener
 
 ## About
 
@@ -10,7 +10,7 @@ This application created for educational purposes as part of an online course fo
 
 1. Download application files from GitHub using `git clone` command:
 ```
-git clone https://github.com/SergIvo/cli_url_shortener
+git clone https://github.com/SergIvo/dvmn_bitly_url_shortener
 ```
 2. Create virtual environment to avoid conflicts with other versions of the same packages. Using python [venv](https://docs.python.org/3/library/venv.html) library is recommended for this purpose:
 ```
