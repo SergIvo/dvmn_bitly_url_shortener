@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ```
 To run application, you should also have a Bitly API key set as an environment variable:
 ```
-export BITLY_API_KEY = 'your Bitly API key'
+export BITLY_API_KEY="your Bitly API key"
 ```
 Run `main.py` with a URL as an argument:
 ```
