@@ -8,9 +8,11 @@ from dotenv import load_dotenv
 def shorten_link(token, url):
     api_url = 'https://api-ssl.bitly.com/v4/shorten'
     headers = {'Authorization': f'Bearer {token}'}
-    response = requests.post(api_url,
-                             headers=headers,
-                             json={'long_url': url})
+    response = requests.post(
+        api_url,
+        headers=headers,
+        json={'long_url': url},
+    )
     response.raise_for_status()
     return response.json()['link']
 
@@ -49,3 +51,4 @@ if __name__ == '__main__':
     except requests.exceptions.HTTPError as error:
             print('Произошла ошибка. Проверьте правильность ввода ссылки.',
                   'Ответ от сервера: ', error)
+
